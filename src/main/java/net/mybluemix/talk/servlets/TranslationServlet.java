@@ -73,7 +73,7 @@ public class TranslationServlet extends HttpServlet {
 		String translationString = translationResultToString(translationResult);
 		JsonObject jsonResult = createJsonObject(text, identifiedLanguage, translationString);
 
-		//saveJsonResult(jsonResult); //FIXME
+		saveJsonResult(jsonResult);
 
 		response.setStatus(HttpStatus.SC_OK);
 		response.getWriter().print(jsonResult);

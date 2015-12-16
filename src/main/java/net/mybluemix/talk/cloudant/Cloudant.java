@@ -57,7 +57,6 @@ public class Cloudant {
 		return saveDocument(json, databaseTranslations);
 	}
 
-	// FIXME
 	public List<JsonObject> getTranslationsDocumentsHistory(int limit) {
 		Database db = getDatabase(databaseTranslations);
 
@@ -68,5 +67,4 @@ public class Cloudant {
 		List<JsonObject> documents = db.findByIndex(selector, JsonObject.class, options);
 		return documents;
 	}
-
 }
