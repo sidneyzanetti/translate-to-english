@@ -1,4 +1,17 @@
 $(document).ready(function() {
+	function getTranslationHistory() {
+		var url = 'TranslationHistory';
+		$.getJSON(url, function(data) {
+			var items = [];
+			$.each(data, function(key, val) {
+				items.push("<tr><td>"+ val.textInput +"</td><td>"+ val.textTranslated +"</td><td>"+ val.detectedLanguage +"</td><td>"+ val.confidenceDetectedLanguage +"%</td></tr>");
+			});
+			$("#translationHistoryTbody").html(items.join(""));
+		});	
+	}
+	getTranslationHistory();
+	
+	
 	$('#translateButton').click(function(evt) {
 		var url = 'Translation';
 		var btn = $('#translateButton');

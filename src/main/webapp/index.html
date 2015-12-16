@@ -57,7 +57,26 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div>			
+			<br /><br /><br />
+			<div class="row">
+				<div class="translationHistoryDiv">
+					<table class="table"> 
+						<caption>Last five translations</caption> 
+						<thead> 
+							<tr>
+								<th width="35%">Text</th>
+								<th width="35%">Text translated</th>
+								<th width="20%">Language detected</th>
+								<th width="10%">Confidence</th>							
+							</tr>
+						</thead> 
+						<tbody id="translationHistoryTbody"> 
+							<tr><td colspan="4" class="text-center"><span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span> Loading...</td></tr> 
+						</tbody> 
+					</table>
+				</div>
+			</div>			
 			<br /><br /><br />
 			<h5 class="text-center">
 				This is just a proof of concept to test 
@@ -66,6 +85,7 @@
 				<a href="https://cloudant.com/">Cloudant NoSQL DB</a> 
 				from IBM Watson Developer Cloud on Bluemix
 			</h5>
+			<br /><br /><br />
 		</div>
 	</div>
 	<script type="text/javascript" src="index.js"></script>

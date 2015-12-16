@@ -39,6 +39,11 @@ h1 {
 	font-size: 12px;
 }
 
+.translationHistoryDiv {
+	width: 75%;
+	margin: 0 auto;
+}
+
 .glyphicon-refresh-animate {
     -animation: spin .7s infinite linear;
     -webkit-animation: spin2 .7s infinite linear;
