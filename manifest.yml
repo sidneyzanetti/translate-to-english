@@ -1,0 +1,8 @@
+applications:
+- path: target/TalkTestApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: talk-test
+  host: talk-test
+  disk_quota: 1024M

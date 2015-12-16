@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Translate to English</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script	src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="">Translate to English</a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse"></div>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="starter-template" style="margin-top:100px">
+			<h1>Translate to English and Say it!</h1>
+			<br /><br />
+			<div class="row">
+				<div class="left">
+					<label for="textareaInput" class="control-label">
+						Type your text using any language here:
+					</label>
+					<div>
+						<textarea id="textareaInput" name="text" rows="5" class="form-control"></textarea>
+					</div>
+					<div id="languageDetectedDiv" class="small" style="display: none">
+						<strong>Language detected:</strong> 
+						<span id="languageDetectedSpan"></span> <em>(confidence: <span id="languageDetectedConfidenceSpan"></span>%)</em>
+					</div>
+					<div id="errorMessageInput" class="label label-danger text-12px" style="display: none">
+						Error processing your text.
+					</div>
+				</div>
+				<div id="translateSubmit" class="center-button text-center">
+					<button id="translateButton" type="button" class="btn-lg btn-success">Translate</button>
+				</div>
+				<div class="right">
+					<label for="textareaOutput" class="control-label">
+						Your text translated to English:
+					</label>
+					<textarea id="textareaOutput" rows="5" readonly="readonly" class="form-control"></textarea>
+					<div id="errorMessageOutput" class="label label-danger text-12px" style="display: none">
+						Error processing your text
+					</div>
+					<div id="listenSubmit" class="text-left">
+						<button id="listenButton" type="button"><span class="glyphicon glyphicon-play"></span> Say it!</button>
+						<div id="audio">
+							<audio id="audioResult" type="audio/ogg">
+								Your browser does not support the audio element.
+							</audio>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br /><br /><br />
+			<h5 class="text-center">
+				This is just a proof of concept to test 
+				<a href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/text-to-speech.html">Text to Speech</a> and 
+				<a href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/language-translation.html">Language Translation</a> 
+				from IBM Watson Developer Cloud on Bluemix
+			</h5>
+		</div>
+	</div>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
