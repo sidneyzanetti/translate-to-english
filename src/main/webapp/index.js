@@ -4,7 +4,10 @@ $(document).ready(function() {
 		$.getJSON(url, function(data) {
 			var items = [];
 			$.each(data, function(key, val) {
-				items.push("<tr><td>"+ val.textInput +"</td><td>"+ val.textTranslated +"</td><td>"+ val.detectedLanguage +"</td><td>"+ val.confidenceDetectedLanguage +"%</td></tr>");
+				items.push("<tr><td>"+ maxLenghtText(val.textInput, 120) +"</td>" +
+						   "<td>"+ maxLenghtText(val.textTranslated, 120) + "</td>"+
+						   "<td>"+ val.detectedLanguage +"</td>" +
+						   "<td>"+ val.confidenceDetectedLanguage +"%</td></tr>");
 			});
 			$("#translationHistoryTbody").html(items.join(""));
 		});	
@@ -79,6 +82,12 @@ $(document).ready(function() {
 	function showMessageDiv(htmlText, divId) {
 		$("#" + divId).html(htmlText)
 		.show();
+	}
+	
+	function maxLenghtText(text, size) {
+		if(text.length > size)
+			return text.substr(0, size) + "...";
+		return text;		
 	}
 
 });
