@@ -10,6 +10,9 @@ If you submit a text in any language, this project will try to detect the langua
 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/sidneyzanetti/translate-to-english)
 
+## Check it out
+http://talk-test.mybluemix.net/
+
 ## Running the Application in Bluemix using Eclipse
 
 1. Download and install [IBM Eclipse Tools for Bluemix](https://developer.ibm.com/wasdev/downloads/#asset/tools-IBM_Eclipse_Tools_for_Bluemix).
