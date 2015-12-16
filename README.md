@@ -1,7 +1,8 @@
 Translate to English and Say it!
 ==============
 
-This project is just a proof of concept to test	[Text to Speech](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/text-to-speech.html) and [Language Translation](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/language-translation.html) from IBM Watson Developer Cloud on Bluemix.
+This project is just a proof of concept to test	[Text to Speech](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/text-to-speech.html), [Language Translation](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/language-translation.html) and
+(Cloudant)[https://cloudant.com/] from IBM Watson Developer Cloud on Bluemix.
 
 ## How it works
 
